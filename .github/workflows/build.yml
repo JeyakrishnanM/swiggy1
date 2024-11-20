@@ -22,9 +22,9 @@ jobs:
         
       - name: Docker build and push
         run: |
-          docker build -t swiggy-clone .
-          docker tag swiggy-clone jeyakrishnan/swiggy-clone:latest
+          docker build -t swiggy1-clone .
+          docker tag swiggy1-clone jeyakrishnan/swiggy1-clone:latest
           docker login -u ${{ secrets.Dockerhub_username }} -p ${{ secrets.Dockerhub_token }}
-          docker push jeyakrishnan/swiggy-clone:latest
+          docker push jeyakrishnan/swiggy1-clone:latest
         env:
           DOCKER_CLI_ACI: 1
