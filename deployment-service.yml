@@ -2,20 +2,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: swiggy
+  name: swiggy1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: swiggy
+      app: swiggy1
   template:
     metadata:
       labels:
-        app: swiggy
+        app: swiggy1
     spec:
       containers:
-      - name: swiggy
-        image: aakibkhan1212/swiggy-clone:latest
+      - name: swiggy1
+        image: jeyakrishnan/swiggy1-clone:latest
         ports:
         - containerPort: 3000   # Use port 3000
 
